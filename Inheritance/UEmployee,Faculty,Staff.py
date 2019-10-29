@@ -32,13 +32,12 @@ class Faculty(UEmployee):
 
     # Function that allows the user to enter members to the department
     def addMembers(self,s_name,s_salary):
-        for index in range(num):
-            self.f_listname.append(super().__init__(self.s_name,self.s_salary))
+        self.f_listname.append(super().__init__(s_name,s_salary))
 
     # Function that returns info about each employee in the department
     def getMembers(self):
         for index in self.f_listname:
-            return index
+            return index.getName()
 
     # Function that returns the name of the department
     def getDepartment(self):
@@ -75,6 +74,7 @@ class Staff(UEmployee):
 
 math = Faculty('Math')
 
-math.addMembers(input("Enter the name of the employee"),input("Enter the salary of the employee"))
+math.addMembers('John Smith',20000)
+math.addMembers('Tissan Kugathas',20000)
 
-print(math.getMembers())
+print(math)
