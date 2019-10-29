@@ -27,26 +27,26 @@ class UEmployee:
 class Faculty(UEmployee):
 
     def __init__(self,name):
-        self.name = name
-        self.listname  =  []
+        self.f_name = name
+        self.f_listname  =  []
 
     # Function that allows the user to enter members to the department
-    def addMembers(self,num):
+    def addMembers(self,s_name,s_salary):
         for index in range(num):
-            self.listname.append(super().__init__(input("Enter the name of the employee"),input("Enter the salary of the employee")))
+            self.f_listname.append(super().__init__(self.s_name,self.s_salary))
 
     # Function that returns info about each employee in the department
     def getMembers(self):
-        for index in self.listname:
+        for index in self.f_listname:
             return index
 
     # Function that returns the name of the department
     def getDepartment(self):
-        return self.names
+        return self.f_name
 
     # Repr function that returns the name of the department and the number of members
     def __repr__(self):
-        return "There are {} memebers in the {} department".format(len(self.listname),self.getDepartment())
+        return "There are {} memebers in the {} department".format(len(self.f_listname),self.getDepartment())
 
 # Staff class which stores staff information and the members
 class Staff(UEmployee):
@@ -71,3 +71,10 @@ class Staff(UEmployee):
     # Function that returns the number of staff that have the job title
     def __repr__(self):
         return "There are {} staff who are {}".format(len(self.listname),self.getJobtitle())
+
+
+math = Faculty('Math')
+
+math.addMembers(input("Enter the name of the employee"),input("Enter the salary of the employee"))
+
+print(math.getMembers())
