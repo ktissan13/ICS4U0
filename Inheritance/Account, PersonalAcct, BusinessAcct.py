@@ -60,5 +60,7 @@ class BusinessAcct(Account):
 Tissan = PersonalAcct(100)
 
 print(Tissan)
-Tissan.withdraw(50)
+Tissan.PersonalWithdraw(50)
+print(Tissan)
+Tissan.PersonalWithdraw(25)
 print(Tissan)
