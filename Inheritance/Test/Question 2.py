@@ -12,6 +12,7 @@ class Stats:
 
     # This function calculates the overall points of the team
     def overallPoints(self,wins,losses,tieds):
+        # wins are multiplied by 2 and tieds are multiplied by 1 and losses are multiplied by 0 to get the overall points
         self.overall = (wins*2) + (tieds*1) + (losses*0)
         return self.overall
 
@@ -51,6 +52,12 @@ class BaseballTeam(Stats):
 
 # This test case shows a baseball team that has 2 wins, 5 losees and 1 tied game
 raptors = BaseballTeam(2,5,1)
+
+# prints the information about the baseball team raptors
+print(raptors)
+
+# sets the number of wins to 5 for the raptors
+raptors.setWins(5)
 
 # prints the information about the baseball team raptors
 print(raptors)
