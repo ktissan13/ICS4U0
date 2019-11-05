@@ -56,8 +56,10 @@ class Essay(Document):
 
     # Returns the info about the essay such as the number of words, pages, and if the essay has a valid length
     def __repr__(self):
+        # if length is valid then it will tell user that it is valid
         if self.validLength():
             return "This essay has {} word(s) and {} page(s) and it has a valid length".format(self.num_words, self.calculatePages())
+        # if not valid then it will tell the user that it is not valid
         else:
             return "This essay has {} word(s) and {} page(s) and it does not have a valid length".format(self.num_words, self.calculatePages())
 
