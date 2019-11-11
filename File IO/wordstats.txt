@@ -1,0 +1,4 @@
+WORD    OCCURENCES
+the     57
+and     12
+zoo     3
