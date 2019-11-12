@@ -18,13 +18,13 @@ with open('testprocessor.txt') as file:
 
     for ans in answers:
         right = 0
-        for char in range(len(answer)):
+        for char in range(len(answer)-1):
             if ans[char] == answer[char]:
                 right += 1
         correct.append(right)
 
-    for mark in correct:
-        print((mark/len(answer))*100)
+    for current in range(len(name)):
+        print('%-12s%-5s'%(name[current],((str(round((correct[current]/(len(answer)-1))*100))+'%'))))
                 
 
 
