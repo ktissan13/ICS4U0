@@ -5,7 +5,7 @@
 
 order = []
 
-with open('wordstats.txt') as file:
+with open('File IO/wordstats.txt') as file:
     content = list(file)
     print(content[0])
     line = 1
