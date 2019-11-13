@@ -6,7 +6,7 @@
 num_lines = 0
 num_words = 0
 
-with open("source.txt", 'r') as file:
+with open("File IO/source.txt", 'r') as file:
     for line in file:
         num_lines += 1
         words = line.split()
