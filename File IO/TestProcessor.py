@@ -7,7 +7,7 @@ name = []
 answers = []
 correct = []
 
-with open('testprocessor.txt') as file:
+with open('File IO/testprocessor.txt') as file:
     content = list(file)
     answer = content[0]
     for line in range(1,len(content)):
@@ -25,6 +25,3 @@ with open('testprocessor.txt') as file:
 
     for current in range(len(name)):
         print('%-12s%-5s'%(name[current],((str(round((correct[current]/(len(answer)-1))*100))+'%'))))
-                
-
-
