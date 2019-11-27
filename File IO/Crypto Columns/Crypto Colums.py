@@ -9,9 +9,13 @@ with open('File IO/Crypto Columns/input.dat') as userinput:
     content = list(userinput)
     # goes to through each set of input
     for index in range(0,(len(content)-1),2):
+        # gets the keyword
         keyword = content[index]
+        # gets the string that needs to be decoded
         coded = content[index+1]
+        # keeps the order of index of the character
         order = []
+        # finds out the order of letters accsending order
         for index2 in range(len(keyword)):
             if index2 not in order:
                 highest = index2
@@ -21,4 +25,7 @@ with open('File IO/Crypto Columns/input.dat') as userinput:
                             highest = index3
                         if highest not in order:
                             order.append(highest)
-        print(order)
+                for colum in order:
+                    s = (len(coded)//len(keyword))*colum
+
+            
