@@ -17,4 +17,7 @@ highest = max(students.values())
 lowest = min(students.values())
 median = statistics.median(students.values())
 
-print(highest,lowest,median) 
+print(highest,lowest,median)
+for student,mark in students.items():
+    if mark == highest:
+        print(student,'has the highest mark!')
