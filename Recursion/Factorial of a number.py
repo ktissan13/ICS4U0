@@ -1,3 +1,7 @@
+# Tissan Kugathas
+# Recursion Trial
+# ICS4U0
+# December 2019
 
 
 def factorial(num):
@@ -9,5 +13,4 @@ def factorial(num):
 
 
 N = int(input())
-1
 print(factorial(N))
