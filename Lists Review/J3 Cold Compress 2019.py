@@ -5,8 +5,8 @@
 
 # this input holds all the user inputs
 inputs = []
-# this ask the user the number lines 
-lines = int(input('Enter the number of lines: '))
+# this ask the user the number lines
+lines = int(input())
 
 
 # this for loop will loop until the number lines the user gave
@@ -50,4 +50,3 @@ for current_input in inputs:
             count = 0
 # once its done checking the current input, it prints the final string with output of the current input
 print(final_string)
-            
