@@ -7,6 +7,7 @@ def factorial(num):
         expo = num*factorial(num-1)
     return expo
 
-N = 8000000
 
+N = int(input())
+1
 print(factorial(N))
